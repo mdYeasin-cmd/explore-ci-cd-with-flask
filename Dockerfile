@@ -21,7 +21,7 @@ RUN pip install pytest
 
 CMD ["python","-m","pytest", "--cov=flask_starterkit", "--cov-report=term-missing"]
 
-# FROM base as prod
+FROM base as prod
 
-# CMD ["flask", "run", "--host", "0.0.0.0"]
+CMD ["flask", "run", "--host", "0.0.0.0"]
 
